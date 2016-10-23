@@ -1,0 +1,16 @@
+﻿@model FluentValidation_Issue_349_IEnumerableModels.Models.MyModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post">
+    @Html.ValidationSummary()
+    <div class="row">
+        <div class="col-md-12">
+            @Html.EditorFor(m => m.MyProperty)
+        </div>
+        <div class="col-md-12">
+            <button type="submit">Click to validate on server</button>
+        </div>
+    </div>
+</form>

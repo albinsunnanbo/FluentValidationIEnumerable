@@ -1,0 +1,20 @@
+﻿@model IEnumerable<FluentValidation_Issue_349_IEnumerableModels.Models.MyModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post">
+    @Html.ValidationSummary()
+    @for (int i = 0; i < Model.Count(); i++)
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <input type="hidden" name="Index" value="@i" />
+                @Html.EditorFor(m => Model.ToList()[i].MyProperty)
+            </div>
+        </div>
+    }
+    <div class="col-md-12">
+        <button type="submit">Click to validate on server</button>
+    </div>
+</form>
