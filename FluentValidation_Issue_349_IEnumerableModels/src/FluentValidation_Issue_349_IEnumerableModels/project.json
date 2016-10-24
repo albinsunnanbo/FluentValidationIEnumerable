@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "FluentValidation.AspNetCore": "6.4.0-beta4",
+    "FluentValidation.AspNetCore": "6.4.0-beta5",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.0.1",
     "Microsoft.AspNetCore.Razor.Tools": {
